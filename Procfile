@@ -1,1 +1,1 @@
-web: gunicorn frobshop.wsgi
+web: gunicorn frobshop.wsgi --log-file -
