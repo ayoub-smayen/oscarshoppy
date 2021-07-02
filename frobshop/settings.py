@@ -32,7 +32,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 CORS_ORIGIN_ALLOW_ALL = True # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
 CORS_ALLOW_CREDENTIALS = True
-
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
 # Application definition
 SITE_ID = 1
 INSTALLED_APPS = [
